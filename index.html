@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Calcolo del Fattore di Rischio – Project Work</title>
+  <link rel="stylesheet" href="stile.css">
+  <script src="fattore_rischio.js" defer></script>
+</head>
+
+<body>
+  <h1>Documento esplicativo – Calcolo del fattore di rischio</h1>
+
+  <p>
+    Il calcolo del fattore di rischio rappresenta una fase essenziale per la corretta valutazione delle condizioni operative e per la definizione di adeguate misure preventive.
+    In particolare, esso consente di attribuire un valore quantitativo al livello di esposizione al rischio in relazione alle variabili individuate dalla normativa tecnica e dalle linee guida professionali.
+    La metodologia applicata si basa su un modello logico-procedurale che prevede:
+  </p>
+
+  <ul>
+    <li>Identificazione del pericolo</li>
+    <li>Stima della Probabilità (P)</li>
+    <li>Valutazione della Frequenza (F)</li>
+    <li>Stima della Gravità del Danno (G)</li>
+  </ul>
+
+  <p>Il fattore di rischio è quindi determinato dalla formula: <strong>R = P × F × G</strong></p>
+
+  <h2>Calcolatore del Fattore di Rischio</h2>
+
+  <label>Probabilità (P): <input type="number" id="prob" min="1" max="5"></label><br>
+  <label>Frequenza (F): <input type="number" id="freq" min="1" max="5"></label><br>
+  <label>Gravità (G): <input type="number" id="grav" min="1" max="5"></label><br>
+  <button onclick="calcola()">Calcola Fattore di Rischio</button>
+
+  <p id="risultato">Inserisci i valori e premi "Calcola".</p>
+
+  <hr>
+  <p><a href="Calcolo_del_fattore_di_rischio.pdf" download>📄 Scarica il documento esplicativo in PDF</a></p>
+</body>
+</html>
