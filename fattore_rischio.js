@@ -4,7 +4,7 @@ function calcola(){
   var g = parseFloat(document.getElementById('grav').value);
 
   if(isNaN(p) || isNaN(f) || isNaN(g)){
-    document.getElementById('risultato').innerText = "⚠️ Inserire tutti i valori.";
+    document.getElementById('risultato').innerText = "Inserire tutti i valori.";
     return;
   }
 
@@ -20,3 +20,4 @@ function calcola(){
   document.getElementById('risultato').innerHTML =
     "Fattore di rischio: <strong>" + r + "</strong> – Livello: <strong class='" + classe + "'>" + livello + "</strong>";
 }
+
